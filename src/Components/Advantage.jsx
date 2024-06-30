@@ -128,6 +128,7 @@ const Container = styled.div`
   }
 
   @media screen and (max-width: 500px) {
+    padding: 10px;
     h1 {
       font-size: 25px;
     }
@@ -144,6 +145,7 @@ const Content = styled.div`
   @media screen and (max-width: 768px) {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
+    padding: 10px;
   }
 `;
 
