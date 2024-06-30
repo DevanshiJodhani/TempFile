@@ -79,10 +79,11 @@ const Title = styled.h1`
   }
 `;
 
-const SubTitle = styled.h3`
+const SubTitle = styled.p`
   margin-top: 15px;
-  text-align: left;
+  text-align: center;
   line-height: 1.3;
+  font-size: 18px;
   color: #333;
 
   @media screen and (max-width: 768px) {
