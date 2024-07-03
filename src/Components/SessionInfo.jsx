@@ -46,7 +46,7 @@ const Wrapper = styled.div`
   }
 `;
 const InfoBox = styled.div`
-  background: #00000037;
+  background: #d7d7d7;
   padding: 30px;
   border-radius: 5px;
   display: flex;

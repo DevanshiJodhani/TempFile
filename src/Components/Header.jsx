@@ -54,7 +54,8 @@ const Container = styled.div`
   width: 100%;
   height: 80px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background: #f5f5f5;
+  background: #fff;
+  z-index: 1000;
 `;
 
 const Content = styled.div`

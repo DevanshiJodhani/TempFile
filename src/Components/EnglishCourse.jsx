@@ -208,7 +208,7 @@ const Option = styled.div`
   border-radius: 10px;
   cursor: pointer;
   transition: height 0.5s ease;
-  background: #f5f5f5;
+  background: #fff;
   height: 80px;
   
 

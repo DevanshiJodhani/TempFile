@@ -18,7 +18,7 @@ const Home = () => {
         </SubTitle>
         <MainBox>
           <ImgBox>
-            <img src="./images/home.png" alt="" />
+            <img src="./images/home.svg" alt="" />
           </ImgBox>
           <Info>
             <CountDown />
@@ -101,7 +101,7 @@ const MainBox = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 80px;
+  /* padding: 0px 80px; */
 
   @media screen and (max-width: 800px) {
     display: flex;
@@ -116,7 +116,6 @@ const MainBox = styled.div`
 `;
 
 const ImgBox = styled.div`
-  /* width: ; */
   background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
