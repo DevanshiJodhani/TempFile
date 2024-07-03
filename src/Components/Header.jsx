@@ -12,7 +12,9 @@ const Header = () => {
     <Container>
       <Content>
         <Logo>
-          <img src="./images/favicon.png" alt="Logo" />
+          <a href="/">
+            <img src="./images/favicon.png" alt="Logo" />
+          </a>
         </Logo>
         <NavLinks>
           <input type="checkbox" id="click" />
@@ -27,8 +29,8 @@ const Header = () => {
                 <i className="bx bx-chevron-down"></i>
               </a>
               <DropDown isOpen={isOpen}>
-                <DropOption href="english">English</DropOption>
-                <DropOption href="#">Workshop 2</DropOption>
+                <DropOption href="/english">English</DropOption>
+                <DropOption href="/project">project</DropOption>
                 <DropOption href="#">Workshop 3</DropOption>
               </DropDown>
             </li>
@@ -173,10 +175,9 @@ const DropDown = styled.div`
   list-style: none;
   z-index: 1000;
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     top: 100%;
   }
-  
 `;
 
 const DropOption = styled.a`
@@ -186,8 +187,6 @@ const DropOption = styled.a`
   text-align: center;
   color: #333;
   text-decoration: none;
-
 `;
-
 
 export default Header;

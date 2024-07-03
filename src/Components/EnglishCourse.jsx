@@ -1,13 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const EnglishCourse = () => {
-  const [activeOption, setActiveOption] = useState(null);
-
-  const toggleInfo = (index) => {
-    setActiveOption(index === activeOption ? null : index);
-  };
-
   const options = [
     {
       title: 'Introduction and Needs Assessment',
@@ -105,33 +99,19 @@ const EnglishCourse = () => {
         </SubTitle>
         <About>
           {options.map((option, index) => (
-            <Option
-              key={index}
-              active={index === activeOption}
-              onClick={() => toggleInfo(index)}
-            >
+            <Option key={index}>
               <Question>
                 <p>{index + 1}</p>
                 <h2>{option.title}</h2>
                 <a>
-                  <i
-                    className={
-                      index === activeOption
-                        ? 'bx bx-chevron-up'
-                        : 'bx bx-chevron-down'
-                    }
-                  ></i>
+                  <i className="bx bx-chevron-down"></i>
                 </a>
               </Question>
-              {index === activeOption && (
-                <Info>
-                  <div>
-                    {option.info.map((item, idx) => (
-                      <li key={idx}>{item}</li>
-                    ))}
-                  </div>
-                </Info>
-              )}
+              <Info>
+                {option.info.map((item, idx) => (
+                  <li key={idx}>{item}</li>
+                ))}
+              </Info>
             </Option>
           ))}
         </About>
@@ -200,12 +180,22 @@ const About = styled.div`
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-gap: 20px;
+  grid-gap: 40px;
 
   @media screen and (max-width: 990px) {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     grid-gap: 20px;
+  }
+`;
+const Info = styled.div`
+  margin-top: 20px;
+  padding: 10px;
+
+  li {
+    font-size: 17px;
+    line-height: 1.3;
+    margin-bottom: 5px;
   }
 `;
 
@@ -217,20 +207,42 @@ const Option = styled.div`
   width: 100%;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background: #f5f5f5;
   border-radius: 10px;
   cursor: pointer;
-  transition: height 0.3s ease;
+  transition: height 0.5s ease; 
+  background: #f5f5f5;
+  height: 80px; 
 
-  height: ${(props) => (props.active ? 'auto' : '120px')};
+  &:hover {
+    background: linear-gradient(90deg, #13f9fd37, #ffffff);
+    height: 220px; 
+    p{
+      box-shadow: rgb(76, 76, 77) 0px 10px 20px -10px;
+    }
+  }
+
+  ${Info} {
+    display: none; 
+  }
+
+  &:hover ${Info} {
+    display: block; 
+  }
+
+ 
+  &:not(:hover) {
+    height: 100px;
+  }
 `;
+
+
 
 const Question = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  h2{
+  h2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -244,7 +256,7 @@ const Question = styled.div`
   p {
     width: 50px;
     height: 50px;
-    background: #d0d0d0;
+    background: #eeeeee;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -262,21 +274,11 @@ const Question = styled.div`
       font-size: 16px;
       margin-right: 10px;
     }
-    a{
+    a {
       font-size: 25px;
     }
   }
 `;
 
-const Info = styled.div`
-  margin-top: 20px;
-  padding: 10px;
-
-  li {
-    font-size: 17px;
-    line-height: 1.3;
-    margin-bottom: 5px;
-  }
-`;
 
 export default EnglishCourse;

@@ -6,6 +6,7 @@ const Form = () => {
       <h1>Join the Master class</h1>
       <Content>
         <Left>
+          <h1>Rigster now</h1>
           <form action="#">
             <input type="text" placeholder="Enter name" />
             <input type="email" placeholder="Enter email" />
@@ -14,7 +15,7 @@ const Form = () => {
           </form>
         </Left>
         <Right>
-          <img src="./images/join.png" alt="" />
+          <img src="./images/payNow.png" alt="" />
           <h3>
             Join Our Master Class In<OldPrice>₹1000</OldPrice>
             <NewPrice>ONLY ₹ 100</NewPrice>
@@ -45,7 +46,7 @@ const Container = styled.div`
   }
 
   @media screen and (max-width: 500px) {
-    padding: 10px;
+    padding: 30px;
     h1 {
       font-size: 25px;
     }
@@ -55,7 +56,6 @@ const Container = styled.div`
 const Content = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
   background: #fff;
   padding: 30px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
@@ -74,11 +74,13 @@ const Left = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  h1{
+    margin-bottom: 40px;
+  }
   input {
     width: 100%;
-    height: 50px;
-    margin-bottom: 20px;
+    height: 60px;
+    margin-bottom: 40px;
     outline: none;
     border: 1px solid #222;
     background: transparent;
@@ -104,7 +106,7 @@ const Left = styled.div`
   }
 
   @media screen and (max-width: 700px){
-    width: 100%;
+    width: 90%;
     margin-bottom: 50px;
   }
 `;
@@ -117,7 +119,7 @@ const Right = styled.div`
   align-items: center;
 
   img {
-    width: 150px;
+    width: 500px;
     margin-bottom: 30px;
   }
 
@@ -153,13 +155,21 @@ const Right = styled.div`
       font-size: 16px;
     }
   }
-
+  @media screen and (max-width: 600px){
+    img{
+      width: 350px;
+    }
+  }
 
   @media screen and (max-width: 500px){
+    img{
+      width: 250px;
+    }
     h3{
       font-size: 16px;
     }
   }
+
 
 `;
 
