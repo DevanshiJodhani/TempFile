@@ -58,7 +58,7 @@ const Content = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 890px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,7 +85,7 @@ const ImgBox = styled.div`
     object-position: center;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 890px) {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;

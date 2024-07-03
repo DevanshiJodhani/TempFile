@@ -93,7 +93,7 @@ const EnglishCourse = () => {
           This course is designed to improve your English speaking skills, from
           basic to advanced levels. It is ideal for learners looking to enhance
           their communication for everyday interactions, professional settings,
-          and more. 
+          and more.
         </SubTitle>
         <About>
           {options.map((option, index) => (
@@ -207,33 +207,36 @@ const Option = styled.div`
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   cursor: pointer;
-  transition: height 0.5s ease; 
+  transition: height 0.5s ease;
   background: #f5f5f5;
-  height: 80px; 
+  height: 80px;
 
   &:hover {
     background: linear-gradient(90deg, #13f9fd37, #ffffff);
-    height: 220px; 
-    p{
+    height: 250px;
+    p {
       box-shadow: rgb(76, 76, 77) 0px 10px 20px -10px;
     }
   }
 
   ${Info} {
-    display: none; 
+    display: none;
   }
 
   &:hover ${Info} {
-    display: block; 
+    display: block;
   }
 
- 
   &:not(:hover) {
     height: 100px;
   }
+
+  @media screen and (max-width: 550px) {
+    &:hover {
+      height: 350px;
+    }
+  }
 `;
-
-
 
 const Question = styled.div`
   display: flex;
@@ -266,17 +269,15 @@ const Question = styled.div`
     h2 {
       font-size: 18px;
     }
-    p {
-      width: 40px;
-      height: 40px;
-      font-size: 16px;
-      margin-right: 10px;
-    }
+   p{
+    width: 35px;
+    height: 350px;
+    font-size: 16px;
+   }
     a {
       font-size: 25px;
     }
   }
 `;
-
 
 export default EnglishCourse;

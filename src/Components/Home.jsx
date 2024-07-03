@@ -111,10 +111,12 @@ const MainBox = styled.div`
   }
   @media screen and (max-width: 500px) {
     margin-top: 40px;
+  padding: 0px;
   }
 `;
 
 const ImgBox = styled.div`
+  /* width: ; */
   background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
