@@ -271,7 +271,7 @@ const Question = styled.div`
     }
    p{
     width: 35px;
-    height: 350px;
+    height: 35px;
     font-size: 16px;
    }
     a {
