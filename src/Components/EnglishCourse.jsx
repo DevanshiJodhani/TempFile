@@ -233,7 +233,7 @@ const Option = styled.div`
 
   @media screen and (max-width: 550px) {
     &:hover {
-      height: 350px;
+      height: 300px;
     }
   }
 `;
