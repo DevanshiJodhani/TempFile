@@ -3,10 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body,html{
