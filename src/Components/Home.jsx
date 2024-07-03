@@ -12,14 +12,9 @@ const Home = () => {
   return (
     <Container id="home">
       <Content>
-        <Title>Cloud Computing Master Class</Title>
+        <Title>English Speaking Course</Title>
         <SubTitle>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus esse
-          accusamus perferendis et modi excepturi? Ex accusantium quod
-          repudiandae, doloribus hic nobis praesentium distinctio doloremque
-          molestiae? Incidunt, fugiat facere dolorem, natus ex eum dolores
-          quaerat mollitia sint eaque aliquam consectetur aut eius voluptatum!
-          Tempora hic, maxime reprehenderit quo neque molestiae!
+        Unlock Your Potential with <span>Fluent English</span>
         </SubTitle>
         <MainBox>
           <ImgBox>
@@ -85,8 +80,13 @@ const SubTitle = styled.p`
   margin-top: 15px;
   text-align: center;
   line-height: 1.3;
-  font-size: 18px;
+  font-size: 22px;
   color: #333;
+
+  span{
+    font-weight: 900;
+    color: #ff0000;
+  }
 
   @media screen and (max-width: 768px) {
     font-size: 18px;
@@ -101,6 +101,7 @@ const MainBox = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0px 80px;
 
   @media screen and (max-width: 800px) {
     display: flex;
@@ -114,10 +115,12 @@ const MainBox = styled.div`
 `;
 
 const ImgBox = styled.div`
-  width: 45%;
   background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   img {
     width: 100%;

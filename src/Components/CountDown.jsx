@@ -55,7 +55,7 @@ const Content = styled.div`
   align-items: center;
   p {
     color: #000;
-    font-size: 25px;
+    font-size: 30px;
     margin-bottom: 20px;
   }
 
@@ -72,12 +72,15 @@ const CountdownWrapper = styled.div`
   justify-content: center;
   align-items: center;
   color: #fff;
+  span{
+    color: #000;
+  }
 `;
 
 const TimeBox = styled.div`
-  font-size: 40px;
+  font-size: 45px;
   background: #000;
-  padding: 20px;
+  padding: 30px;
   margin: 5px;
   border-radius: 5px;
   @media screen and (max-width: 500px){
@@ -87,7 +90,7 @@ const TimeBox = styled.div`
 
 const Label = styled.div`
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
   color: #000;
 `;

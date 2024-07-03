@@ -47,7 +47,7 @@ const Wrapper = styled.div`
 `;
 const InfoBox = styled.div`
   background: #00000037;
-  padding: 20px;
+  padding: 30px;
   border-radius: 5px;
   display: flex;
   align-items: center;

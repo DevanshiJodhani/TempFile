@@ -88,14 +88,12 @@ const EnglishCourse = () => {
   return (
     <Container>
       <Content>
-        <Title>English Speaking Course</Title>
+        <Title>Curriculum</Title>
         <SubTitle>
           This course is designed to improve your English speaking skills, from
           basic to advanced levels. It is ideal for learners looking to enhance
           their communication for everyday interactions, professional settings,
-          and more. Through interactive lessons and practical exercises,
-          students will gain confidence in their speaking abilities and improve
-          their overall language proficiency.
+          and more. 
         </SubTitle>
         <About>
           {options.map((option, index) => (
