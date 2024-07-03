@@ -142,7 +142,7 @@ const Content = styled.div`
   align-items: center;
   padding: 20px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 990px) {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     padding: 10px;
@@ -159,12 +159,12 @@ const Img = styled.div`
     width: 100%;
   }
 
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 650px){
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 140px;
+    width: 100px;
   }
 `;
 
@@ -184,10 +184,12 @@ const InfoBox = styled.div`
     padding: 10px;
     color: #464646;
   }
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 650px){
     display: flex;
     flex-direction: column;
-    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* width: 100%; */
 
     h4{
       margin-top: 20px;

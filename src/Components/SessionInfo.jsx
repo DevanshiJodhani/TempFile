@@ -39,7 +39,7 @@ const Wrapper = styled.div`
   align-items: center;
   margin-top: 20px;
   color: #000;
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 800px) {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     margin-bottom: 10px;

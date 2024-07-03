@@ -104,6 +104,9 @@ const Row = styled.div`
 
   @media screen and (max-width: 768px) {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
@@ -123,6 +126,10 @@ const Col = styled.div`
     justify-content: center;
     text-align: left;
     padding: 8px;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-basis: 70%;
   }
   @media screen and (max-width: 500px) {
     flex-basis: 100%;

@@ -54,7 +54,7 @@ const Container = styled.div`
   
   
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 790px) {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -90,7 +90,7 @@ const SocialBox = styled.div`
     padding: 8px;
     color: #fff;
   }
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 790px){
     margin-bottom: 30px;
   }
 `;
@@ -180,10 +180,15 @@ const UpArrow = styled.div`
     padding: 8px;
     color: #fff;
   }
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 790px){
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    margin-top: 50px;
+  }
+
+  @media screen and (max-width: 500px){
+    margin-top: 0;
   }
 `;
 

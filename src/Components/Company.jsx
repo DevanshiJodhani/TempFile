@@ -18,10 +18,10 @@ const Company = () => {
           <img src="./images/amazon.png" alt="" />
         </ImgBox>
         <ImgBox>
-          <img src="./images/apple.png" alt="" />
+          <img src="./images/adobe.png" alt="" />
         </ImgBox>
         <ImgBox>
-          <img src="./images/adobe.png" alt="" />
+          <img src="./images/apple.png" alt="" />
         </ImgBox>
       </Content>
     </Container>
@@ -61,6 +61,8 @@ const Content = styled.div`
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
@@ -86,9 +88,11 @@ const ImgBox = styled.div`
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
+    margin-bottom: 15px;
     align-items: center;
     justify-content: center;
-    width:100%;
+    margin-left: 0;
+    padding: 0;
   }
 `;
 

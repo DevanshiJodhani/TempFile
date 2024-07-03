@@ -90,6 +90,10 @@ const InfoBox = styled.div`
   @media screen and (max-width: 768px){
     margin-left: 0;
     margin-bottom: 20px;
+  
+  }
+
+  @media screen and (max-width: 500px){
     width:300px;
   }
 `;

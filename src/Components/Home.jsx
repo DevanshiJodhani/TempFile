@@ -42,7 +42,7 @@ const Home = () => {
 const Container = styled.div`
   padding: 80px 40px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 990px) {
     padding: 60px 20px;
   }
   @media screen and (max-width: 500px) {
@@ -55,7 +55,7 @@ const Content = styled.div`
   height: auto;
   padding: 20px 120px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 990px) {
     padding: 20px 60px;
   }
   @media screen and (max-width: 500px) {
@@ -100,7 +100,7 @@ const MainBox = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 800px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
