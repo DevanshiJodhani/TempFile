@@ -57,6 +57,10 @@ const InfoBox = styled.div`
     font-size: 25px;
     margin-right: 10px;
   }
+
+  @media screen and (max-width: 500px){
+    padding: 15px;
+  }
 `;
 
 export default SessionInfo;

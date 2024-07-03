@@ -210,6 +210,10 @@ const Option = styled.div`
   transition: height 0.5s ease;
   background: #f5f5f5;
   height: 80px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 
   &:hover {
     background: linear-gradient(90deg, #13f9fd37, #ffffff);
