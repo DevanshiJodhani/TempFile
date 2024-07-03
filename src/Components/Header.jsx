@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <Container>
       <Content>
@@ -16,12 +22,12 @@ const Header = () => {
           </label>
           <ul>
             <li>
-              <a href="/">
+              <a href="#" onClick={handleDropdown}>
                 Workshop
                 <i className="bx bx-chevron-down"></i>
               </a>
-              <DropDown>
-                <DropOption href="#">Workshop 1</DropOption>
+              <DropDown isOpen={isOpen}>
+                <DropOption href="english">English</DropOption>
                 <DropOption href="#">Workshop 2</DropOption>
                 <DropOption href="#">Workshop 3</DropOption>
               </DropDown>
@@ -117,9 +123,9 @@ const NavLinks = styled.div`
         }
       }
 
-      &:hover div {
+      /* &:hover div {
         display: block;
-      }
+      } */
     }
   }
 
@@ -153,26 +159,35 @@ const NavLinks = styled.div`
 `;
 
 const DropDown = styled.div`
-  display: none;
+  display: ${(props) => (props.isOpen ? 'block' : 'none')};
   position: absolute;
-  top: 100%;
+  top: 40px;
   left: 0;
   background: #fff;
+  padding-bottom: 8px;
+  max-width: 200px;
+  width: 200px;
   border: 1px solid #ddd;
+  border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   list-style: none;
-  padding: 0;
-  margin: 0;
   z-index: 1000;
+
+  @media screen and (max-width: 768px){
+    top: 100%;
+  }
+  
 `;
 
 const DropOption = styled.a`
-  display: block;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: #333;
   text-decoration: none;
+
 `;
+
 
 export default Header;

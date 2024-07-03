@@ -6,6 +6,7 @@ import Testimonials from './Testimonials';
 import Company from './Company';
 import WorkShop from './WorkShop';
 import Form from './Form';
+import EnglishCourse from './EnglishCourse';
 
 const Home = () => {
   return (
@@ -30,6 +31,7 @@ const Home = () => {
           </Info>
         </MainBox>
       </Content>
+      <EnglishCourse />
       <Advantage />
       <Company />
       <WorkShop />
