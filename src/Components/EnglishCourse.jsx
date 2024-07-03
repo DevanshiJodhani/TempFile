@@ -200,32 +200,31 @@ const Info = styled.div`
 const Option = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   cursor: pointer;
-  transition: height 0.5s ease;
   background: #fff;
-  height: 80px;
+  transition: height 0.5s ease;
+  height: auto;
+  min-height: 80px;
   
-
   &:hover {
-    background: linear-gradient(90deg, #13f9fd37, #ffffff);
     height: 250px;
+    background: linear-gradient(90deg, #13f9fd37, #ffffff);
     p {
       box-shadow: rgb(76, 76, 77) 0px 10px 20px -10px;
+    }
+    ${Info} {
+      display: block;
     }
   }
 
   ${Info} {
     display: none;
-  }
-
-  &:hover ${Info} {
-    display: block;
   }
 
   &:not(:hover) {
