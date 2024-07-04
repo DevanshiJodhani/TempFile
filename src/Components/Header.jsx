@@ -31,7 +31,7 @@ const Header = () => {
               <DropDown isOpen={isOpen}>
                 <DropOption href="/english">English</DropOption>
                 <DropOption href="/project">project</DropOption>
-                <DropOption href="#">Workshop 3</DropOption>
+                {/* <DropOption href="#">Workshop 3</DropOption> */}
               </DropDown>
             </li>
             <li>
