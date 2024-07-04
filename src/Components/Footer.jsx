@@ -46,7 +46,7 @@ const Footer = () => {
 
 const Container = styled.div`
   background-color: #000;
-  padding: 30px;
+  padding: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
