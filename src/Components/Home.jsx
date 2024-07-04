@@ -10,7 +10,7 @@ import EnglishCourse from './EnglishCourse';
 
 const Home = () => {
   return (
-    <Container id="home">
+    <Container id="#">
       <Content>
         <Title>English Speaking Course</Title>
         <SubTitle>

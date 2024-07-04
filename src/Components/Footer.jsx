@@ -36,7 +36,7 @@ const Footer = () => {
         </NavBox>
       </NavLink>
       <UpArrow>
-        <a href="#home">
+        <a href="#">
           <i className="bx bx-up-arrow-alt"></i>
         </a>
       </UpArrow>
