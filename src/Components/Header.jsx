@@ -153,7 +153,7 @@ const NavLinks = styled.div`
 
         a {
           padding: 20px;
-          font-size: 22px;
+          font-size: 2px;
           display: block;
         }
       }
@@ -188,9 +188,7 @@ const DropOption = styled.a`
   color: #333;
   text-decoration: none;
 
-  @media screen and (max-width: 768px){
-    
-  }
+
 `;
 
 export default Header;
