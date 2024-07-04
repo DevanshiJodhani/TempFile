@@ -13,7 +13,7 @@ const Header = () => {
       <Content>
         <Logo>
           <a href="/">
-            <img src="./images/favicon.png" alt="Logo" />
+            <img src="./images/favicon.jpg" alt="Logo" />
           </a>
         </Logo>
         <NavLinks>
@@ -52,7 +52,7 @@ const Container = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: 80px;
+  height: 100px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background: #fff;
   z-index: 1000;
@@ -79,7 +79,7 @@ const Logo = styled.div`
     width: 100%;
   }
   @media screen and (max-width: 500px) {
-    width: 70px;
+    width: 80px;
   }
 `;
 
@@ -135,7 +135,7 @@ const NavLinks = styled.div`
   @media screen and (max-width: 768px) {
     ul {
       position: fixed;
-      top: 70px;
+      top: 100px;
       left: -100%;
       background: #f5f5f5;
       width: 100%;
