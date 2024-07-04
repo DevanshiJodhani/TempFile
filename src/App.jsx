@@ -13,8 +13,8 @@ function App() {
         <Header />
         <Routes>
           <Route exact path='/' element={<Home />} />
-          <Route path='/english' element={<EnglishCourse />} />
-          <Route path='/project' element={<Project />} />
+          <Route path='english' element={<EnglishCourse />} />
+          <Route path='project' element={<Project />} />
         </Routes>
         <Footer />
       </Router>
