@@ -108,10 +108,7 @@ const Project = () => {
       <Content>
         <Title>Curriculum</Title>
         <TagLine>
-          This course is designed to improve your English speaking skills, from
-          basic to advanced levels. It is ideal for learners looking to enhance
-          their communication for everyday interactions, professional settings,
-          and more.
+        This course equips you with essential project management skills, from foundational principles to advanced strategies. Ideal for aspiring project managers and professionals seeking to enhance their leadership and execution capabilities in managing successful projects.
         </TagLine>
         <About>
           {options.map((option, index) => (

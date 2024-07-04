@@ -25,7 +25,7 @@ const Header = () => {
           <ul>
             <li>
               <a href="#" onClick={handleDropdown}>
-                Workshop
+                Courses
                 <i className="bx bx-chevron-down"></i>
               </a>
               <DropDown isOpen={isOpen}>
