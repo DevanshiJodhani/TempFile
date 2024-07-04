@@ -153,7 +153,7 @@ const NavLinks = styled.div`
 
         a {
           padding: 20px;
-          font-size: 2px;
+          font-size: 20px;
           display: block;
         }
       }
