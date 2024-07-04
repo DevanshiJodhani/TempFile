@@ -29,8 +29,8 @@ const Header = () => {
                 <i className="bx bx-chevron-down"></i>
               </a>
               <DropDown isOpen={isOpen}>
-                <DropOption href="english">English</DropOption>
-                <DropOption href="project">project</DropOption>
+                <DropOption href="/english">English Speaking</DropOption>
+                <DropOption href="/project">Project Management</DropOption>
                 {/* <DropOption href="#">Workshop 3</DropOption> */}
               </DropDown>
             </li>
@@ -165,11 +165,10 @@ const DropDown = styled.div`
   display: ${(props) => (props.isOpen ? 'block' : 'none')};
   position: absolute;
   top: 40px;
-  left: 0;
+  left: -20px;
   background: #fff;
-  padding-bottom: 8px;
-  max-width: 200px;
-  width: 200px;
+  padding-bottom: 12px;
+  width: 250px;
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -188,6 +187,10 @@ const DropOption = styled.a`
   text-align: center;
   color: #333;
   text-decoration: none;
+
+  @media screen and (max-width: 768px){
+    
+  }
 `;
 
 export default Header;
