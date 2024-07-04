@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import CountDown from './CountDown';
 import SessionInfo from './SessionInfo';
+import Form from './Form';
 
 const EnglishCourse = () => {
   const options = [
@@ -151,6 +152,8 @@ const EnglishCourse = () => {
           ))}
         </About>
       </Content>
+      <Form />
+
     </Container>
   );
 };

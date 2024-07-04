@@ -11,33 +11,19 @@ import EnglishCourse from './EnglishCourse';
 const Home = () => {
   return (
     <Container id="#">
-      <Content>
-        <Title>English Speaking Course</Title>
-        <SubTitle>
-        Unlock Your Potential with <span>Fluent English</span>
-        </SubTitle>
-        <MainBox>
-          <ImgBox>
-            <img src="./images/home.svg" alt="" />
-          </ImgBox>
-          <Info>
-            <CountDown />
-            <SessionInfo />
-          </Info>
-        </MainBox>
-      </Content>
+      
       <EnglishCourse />
+      {/* <Form /> */}
       {/* <Advantage /> */}
       {/* <Company /> */}
       {/* <WorkShop /> */}
       {/* <Testimonials /> */}
-      <Form />
     </Container>
   );
 };
 
 const Container = styled.div`
-  padding: 80px 40px;
+  padding: 10px 40px;
 
   @media screen and (max-width: 990px) {
     padding: 60px 20px;

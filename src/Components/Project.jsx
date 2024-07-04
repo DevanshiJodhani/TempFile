@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import CountDown from './CountDown';
 import SessionInfo from './SessionInfo';
-
+import Form from './Form';
 const Project = () => {
   const options = [
     {
@@ -139,6 +139,7 @@ const Project = () => {
           ))}
         </About>
       </Content>
+      <Form />
     </Container>
   );
 };
