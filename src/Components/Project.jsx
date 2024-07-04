@@ -174,6 +174,7 @@ const Title = styled.h1`
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin-top: 30px;
   font-size: 40px;
   color: #000;
@@ -363,7 +364,7 @@ const Question = styled.div`
 
   @media screen and (max-width: 450px) {
     h2 {
-      font-size: 18px;
+      font-size: 16px;
     }
     p {
       width: 35px;

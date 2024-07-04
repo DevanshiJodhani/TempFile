@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import CountDown from './CountDown';
+import SessionInfo from './SessionInfo';
 
 const EnglishCourse = () => {
   const options = [
@@ -98,13 +100,28 @@ const EnglishCourse = () => {
   return (
     <Container>
       <Content>
-        <Title>Curriculum</Title>
+        <Title>English Speaking Course</Title>
         <SubTitle>
+        Unlock Your Potential with <span>Fluent English</span>
+        </SubTitle>
+        <MainBox>
+          <ImgBox>
+          <img src="./images/home.svg" alt="" />
+          </ImgBox>
+          <Info>
+            <CountDown />
+            <SessionInfo />
+          </Info>
+        </MainBox>
+      </Content>
+      <Content>
+        <Title>Curriculum</Title>
+        <TagLine>
           This course is designed to improve your English speaking skills, from
           basic to advanced levels. It is ideal for learners looking to enhance
           their communication for everyday interactions, professional settings,
           and more.
-        </SubTitle>
+        </TagLine>
         <About>
           {options.map((option, index) => (
             <Option
@@ -116,14 +133,20 @@ const EnglishCourse = () => {
                 <p>{index + 1}</p>
                 <h2>{option.title}</h2>
                 <a>
-                  <i className={`bx ${hoveredOption === index ? 'bx-chevron-up' : 'bx-chevron-down'}`}></i>
+                  <i
+                    className={`bx ${
+                      hoveredOption === index
+                        ? 'bx-chevron-up'
+                        : 'bx-chevron-down'
+                    }`}
+                  ></i>
                 </a>
               </Question>
-              <Info>
+              <Detail>
                 {option.info.map((item, idx) => (
                   <li key={idx}>{item}</li>
                 ))}
-              </Info>
+              </Detail>
             </Option>
           ))}
         </About>
@@ -160,6 +183,7 @@ const Title = styled.h1`
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin-top: 30px;
   font-size: 40px;
   color: #000;
@@ -173,6 +197,73 @@ const Title = styled.h1`
 `;
 
 const SubTitle = styled.p`
+  margin-top: 15px;
+  text-align: center;
+  line-height: 1.3;
+  font-size: 22px;
+  color: #333;
+
+  span {
+    font-weight: 900;
+    color: #ff0000;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 16px;
+  }
+`;
+
+const MainBox = styled.div`
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (max-width: 500px) {
+    margin-top: 40px;
+    padding: 0px;
+  }
+`;
+
+const ImgBox = styled.div`
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 80%;
+    margin-bottom: 50px;
+  }
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
+`;
+
+const Info = styled.div`
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+`;
+
+const TagLine = styled.p`
   margin-top: 15px;
   text-align: center;
   line-height: 1.3;
@@ -201,7 +292,7 @@ const About = styled.div`
   }
 `;
 
-const Info = styled.div`
+const Detail = styled.div`
   margin-top: 20px;
   padding: 10px;
 
@@ -223,7 +314,7 @@ const Option = styled.div`
   border-radius: 10px;
   cursor: pointer;
 
-background-color:#f6f6f6;
+  background-color: #f6f6f6;
   transition: height 0.5s ease;
   height: auto;
   min-height: 80px;
@@ -234,12 +325,12 @@ background-color:#f6f6f6;
     p {
       box-shadow: rgb(76, 76, 77) 0px 10px 20px -10px;
     }
-    ${Info} {
+    ${Detail} {
       display: block;
     }
   }
 
-  ${Info} {
+  ${Detail} {
     display: none;
   }
 
@@ -282,7 +373,7 @@ const Question = styled.div`
 
   @media screen and (max-width: 450px) {
     h2 {
-      font-size: 18px;
+      font-size: 16px;
     }
     p {
       width: 35px;

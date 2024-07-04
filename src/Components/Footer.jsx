@@ -45,7 +45,7 @@ const Footer = () => {
 };
 
 const Container = styled.div`
-  background-color: #aaa;
+  background-color: #000;
   padding: 30px;
   display: flex;
   justify-content: space-between;
@@ -67,9 +67,10 @@ const SocialLinks = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #a8a8a8;
 
   h2 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
 `;
@@ -83,12 +84,12 @@ const SocialBox = styled.div`
     width: 40px;
     height: 40px;
     margin-left: 20px;
-    background-color: #000;
+    background-color: #fff;
     border-radius: 10px;
     text-decoration: none;
     font-size: 25px;
     padding: 8px;
-    color: #fff;
+    color: #000;
   }
   @media screen and (max-width: 790px){
     margin-bottom: 30px;
@@ -100,8 +101,9 @@ const NavLink = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #a8a8a8;
   h2 {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   @media screen and (max-width: 500px){
     h2{
@@ -130,7 +132,7 @@ const NavBox = styled.div`
         padding: 16px 30px;
         margin-left: 20px;
         font-size: 18px;
-        color: #000;
+        color: #fff;
         position: relative;
 
         &::before {
@@ -138,7 +140,7 @@ const NavBox = styled.div`
           position: absolute;
           width: 0px;
           height: 2px;
-          background: #000;
+          background: #fff;
           bottom: 10px;
           transition: width 0.5s;
         }
@@ -173,12 +175,12 @@ const UpArrow = styled.div`
     width: 50px;
     height: 50px;
     margin-left: 20px;
-    background-color: #000;
+    background-color: #fff;
     border-radius: 10px;
     text-decoration: none;
     font-size: 30px;
     padding: 8px;
-    color: #fff;
+    color: #000;
   }
   @media screen and (max-width: 790px){
     display: flex;
