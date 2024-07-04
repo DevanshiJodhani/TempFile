@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const EnglishCourse = () => {
@@ -85,6 +85,16 @@ const EnglishCourse = () => {
     },
   ];
 
+  const [hoveredOption, setHoveredOption] = useState(null);
+
+  const handleMouseEnter = (index) => {
+    setHoveredOption(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredOption(null);
+  };
+
   return (
     <Container>
       <Content>
@@ -97,12 +107,16 @@ const EnglishCourse = () => {
         </SubTitle>
         <About>
           {options.map((option, index) => (
-            <Option key={index}>
+            <Option
+              key={index}
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={handleMouseLeave}
+            >
               <Question>
                 <p>{index + 1}</p>
                 <h2>{option.title}</h2>
                 <a>
-                  <i className="bx bx-chevron-down"></i>
+                  <i className={`bx ${hoveredOption === index ? 'bx-chevron-up' : 'bx-chevron-down'}`}></i>
                 </a>
               </Question>
               <Info>
@@ -178,7 +192,7 @@ const About = styled.div`
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-gap: 40px;
+  grid-gap: 50px;
 
   @media screen and (max-width: 990px) {
     display: grid;
@@ -186,6 +200,7 @@ const About = styled.div`
     grid-gap: 20px;
   }
 `;
+
 const Info = styled.div`
   margin-top: 20px;
   padding: 10px;
@@ -207,11 +222,12 @@ const Option = styled.div`
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   cursor: pointer;
-  background: #fff;
+
+background-color:#f6f6f6;
   transition: height 0.5s ease;
   height: auto;
   min-height: 80px;
-  
+
   &:hover {
     height: 250px;
     background: linear-gradient(90deg, #13f9fd37, #ffffff);
@@ -253,7 +269,6 @@ const Question = styled.div`
   a {
     font-size: 30px;
   }
-
   p {
     width: 50px;
     height: 50px;
@@ -269,11 +284,11 @@ const Question = styled.div`
     h2 {
       font-size: 18px;
     }
-   p{
-    width: 35px;
-    height: 35px;
-    font-size: 16px;
-   }
+    p {
+      width: 35px;
+      height: 35px;
+      font-size: 16px;
+    }
     a {
       font-size: 25px;
     }

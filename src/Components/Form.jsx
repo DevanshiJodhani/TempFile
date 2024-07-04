@@ -15,7 +15,7 @@ const Form = () => {
           </form>
         </Left>
         <Right>
-          <img src="./images/payNow.png" alt="" />
+          <img src="./images/payment.svg" alt="" />
           <h3>
             Join Our Master Class In<OldPrice>₹1000</OldPrice>
             <NewPrice>ONLY ₹ 100</NewPrice>
@@ -70,17 +70,16 @@ const Content = styled.div`
 `;
 
 const Left = styled.div`
-  width: 50%;
+  width: 45%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   h1{
     margin-bottom: 40px;
   }
   input {
     width: 100%;
-    height: 60px;
-    margin-bottom: 40px;
+    height: 55px;
+    margin-bottom: 30px;
     outline: none;
     border: 1px solid #222;
     background: transparent;
@@ -112,14 +111,15 @@ const Left = styled.div`
 `;
 
 const Right = styled.div`
-  width: 50%;
+  width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   img {
-    width: 500px;
+    width: 450px;
+    height: 300px;
     margin-bottom: 30px;
   }
 
@@ -175,6 +175,7 @@ const Right = styled.div`
 
 const OldPrice = styled.span`
   text-decoration: line-through;
+  color: #868686;
 `;
 
 const NewPrice = styled.span`

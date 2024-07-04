@@ -27,10 +27,10 @@ const Home = () => {
         </MainBox>
       </Content>
       <EnglishCourse />
-      <Advantage />
-      <Company />
-      <WorkShop />
-      <Testimonials />
+      {/* <Advantage /> */}
+      {/* <Company /> */}
+      {/* <WorkShop /> */}
+      {/* <Testimonials /> */}
       <Form />
     </Container>
   );
@@ -101,7 +101,6 @@ const MainBox = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 0px 80px; */
 
   @media screen and (max-width: 800px) {
     display: flex;
