@@ -23,6 +23,9 @@ const Header = () => {
             <i className="bx bx-x"></i>
           </label>
           <ul>
+          <li>
+              <a href="/">Home</a>
+            </li>
             <li>
               <a href="#" onClick={handleDropdown}>
                 Courses
