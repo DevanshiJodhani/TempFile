@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import CountDown from './CountDown';
 import SessionInfo from './SessionInfo';
 import { useState } from 'react';
+import Form from './Form';
 
 const ItCareerCourse = () => {
   const [hoveredOption, setHoveredOption] = useState(null);
@@ -232,6 +233,7 @@ const ItCareerCourse = () => {
           ))}
         </About>
       </Content>
+      <Form />
     </Container>
   );
 };
