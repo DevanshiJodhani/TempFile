@@ -29,9 +29,9 @@ const Header = () => {
                 <i className="bx bx-chevron-down"></i>
               </a>
               <DropDown isOpen={isOpen}>
-                <DropOption href="/english">English Speaking</DropOption>
-                <DropOption href="/project">Project Management</DropOption>
-                {/* <DropOption href="#">Workshop 3</DropOption> */}
+                <DropOption href="/englishCourse">English Speaking</DropOption>
+                <DropOption href="/projectCourse">Project Management</DropOption>
+                <DropOption href="/itCareerCourse">Career In IT </DropOption>
               </DropDown>
             </li>
             <li>

@@ -20,7 +20,7 @@ const Form = () => {
             Join Our Master Class In<OldPrice>₹1000</OldPrice>
             <NewPrice>ONLY ₹ 100</NewPrice>
           </h3>
-          <button type="submit">Pay Now</button>
+          <a href="https://razorpay.me/@skillforce">Pay Now</a>
         </Right>
       </Content>
     </Container>
@@ -61,7 +61,7 @@ const Content = styled.div`
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
 
-  @media screen and (max-width: 700px){
+  @media screen and (max-width: 700px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,7 +73,7 @@ const Left = styled.div`
   width: 45%;
   display: flex;
   flex-direction: column;
-  h1{
+  h1 {
     margin-bottom: 40px;
   }
   input {
@@ -104,7 +104,7 @@ const Left = styled.div`
     }
   }
 
-  @media screen and (max-width: 700px){
+  @media screen and (max-width: 700px) {
     width: 90%;
     margin-bottom: 50px;
   }
@@ -130,10 +130,9 @@ const Right = styled.div`
     align-items: center;
     font-size: 25px;
     margin-bottom: 50px;
-    
   }
 
-  button {
+  a {
     padding: 16px 30px;
     border: none;
     outline: none;
@@ -143,34 +142,33 @@ const Right = styled.div`
     border-radius: 8px;
     background: #007bff;
     cursor: pointer;
+    text-decoration: none;
 
     &:hover {
       background: #0056b3;
     }
   }
 
-  @media screen and (max-width: 700px){
+  @media screen and (max-width: 700px) {
     width: 100%;
-    h3{
+    h3 {
       font-size: 16px;
     }
   }
-  @media screen and (max-width: 600px){
-    img{
+  @media screen and (max-width: 600px) {
+    img {
       width: 350px;
     }
   }
 
-  @media screen and (max-width: 500px){
-    img{
+  @media screen and (max-width: 500px) {
+    img {
       width: 250px;
     }
-    h3{
+    h3 {
       font-size: 16px;
     }
   }
-
-
 `;
 
 const OldPrice = styled.span`
@@ -184,7 +182,7 @@ const NewPrice = styled.span`
   margin-left: 10px;
   margin-top: 10px;
 
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 500px) {
     font-size: 20px;
   }
 `;

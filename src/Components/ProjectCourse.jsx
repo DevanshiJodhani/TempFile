@@ -3,7 +3,16 @@ import styled from 'styled-components';
 import CountDown from './CountDown';
 import SessionInfo from './SessionInfo';
 import Form from './Form';
-const Project = () => {
+const ProjectCourse = () => {
+  const [hoveredOption, setHoveredOption] = useState(null);
+
+  const handleMouseEnter = (index) => {
+    setHoveredOption(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredOption(null);
+  };
   const options = [
     {
       title: 'Introduction to Project Managemen',
@@ -77,15 +86,6 @@ const Project = () => {
     },
   ];
 
-  const [hoveredOption, setHoveredOption] = useState(null);
-
-  const handleMouseEnter = (index) => {
-    setHoveredOption(index);
-  };
-
-  const handleMouseLeave = () => {
-    setHoveredOption(null);
-  };
 
   return (
     <Container id='#'>
@@ -375,4 +375,4 @@ const Question = styled.div`
   }
 `;
 
-export default Project;
+export default ProjectCourse;

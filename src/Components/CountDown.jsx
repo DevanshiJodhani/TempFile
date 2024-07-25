@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const CountDown = () => {
   const calculateTimeLeft = () => {
-    const eventDate = new Date('2024-07-10T11:00:00');
+    const eventDate = new Date('2024-09-04T11:00:00');
     const currentTime = new Date();
     const difference = eventDate - currentTime;
 
