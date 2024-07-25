@@ -177,8 +177,8 @@ const ItCareerCourse = () => {
       <Content>
         <Title>How to Start a Career in IT and Available Roles</Title>
         <SubTitle>
-          Transform Your Career with Expert Training and{' '}
-          <span>Real-World Skills!</span>
+        Navigate the IT World:
+          <span> Your Gateway to Thriving Careers</span>
         </SubTitle>
         <MainBox>
           <ImgBox>
@@ -193,10 +193,7 @@ const ItCareerCourse = () => {
       <Content>
         <Title>Curriculum</Title>
         <TagLine>
-          This course equips you with essential project management skills, from
-          foundational principles to advanced strategies. Ideal for aspiring
-          project managers and professionals seeking to enhance their leadership
-          and execution capabilities in managing successful projects.
+        Kickstart your IT career with this essential guide! Explore key IT roles, educational paths, and certifications. Gain practical experience and learn how to excel in interviews. Start building your IT future now!
         </TagLine>
         <About>
           {options.map((option, index) => (
@@ -204,7 +201,7 @@ const ItCareerCourse = () => {
               key={index}
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={handleMouseLeave}
-              isOpen={hoveredOption === index} // Pass the state to styled component
+              isOpen={hoveredOption === index}
             >
               <Question>
                 <p>{index + 1}</p>
@@ -424,6 +421,9 @@ const Option = styled.div`
 
   &:hover {
     background: linear-gradient(90deg, #13f9fd37, #ffffff);
+    p {
+      box-shadow: rgb(76, 76, 77) 0px 10px 20px -10px;
+    }
     ${Detail} {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
